@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>You're registered · Recykal Times Battery EPR Webinar</title>
+<title>Interest registered · Recykal Times</title>
 <style>
   :root{--red:#D5352F;--ink:#141414;--muted:#55554f;--line:#ececec;--bg:#eceae4;}
   *{box-sizing:border-box;}
@@ -28,7 +28,7 @@
   .btn2{display:inline-block;background:var(--ink);color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-radius:8px;padding:13px 22px;margin-left:10px;}
   .foot{text-align:center;padding:24px 40px 30px;}
   .foot .flogo{width:176px;max-width:58%;height:auto;margin:0 auto;display:block;}
-  @media (max-width:520px){.pad{padding:28px 24px;}h1{font-size:28px;}.btn2{display:block;margin:14px 0 0;}}
+  @media (max-width:520px){.pad{padding:28px 24px;}h1{font-size:28px;}.ctas .btn,.ctas .btn2{display:block;text-align:center;margin:0 0 10px 0;}}
 </style>
 </head>
 <body>
@@ -37,18 +37,18 @@
       <div class="pad">
         <img class="logo" src="https://assets.recykaltimes.com/rt-logo.png" alt="Recykal Times" />
         <div class="rule"></div>
-        <div class="kick" style="margin-top:28px;">You're confirmed</div>
-        <h1>Good call. Your seat is saved.</h1>
-        <p class="sub">Thanks for registering for the Recykal Times live session on <strong style="color:#141414;">Battery Scrap EPR, H1 FY 2026-27</strong>. We will email you the joining link and the full agenda a few days before.</p>
-        <div class="date" id="dateChip">Your preferred date is noted</div>
+        <div class="kick" style="margin-top:28px;">Interest registered</div>
+        <h1>Your interest has been registered.</h1>
+        <p class="sub">Thank you for registering your interest in our live session on <strong style="color:#141414;">Battery Scrap EPR, H1 FY 2026-27</strong>. We are finalising the date based on the preferences received, and will share the confirmed schedule and joining details by email.</p>
+        <div class="date" id="dateChip">Preferred date noted</div>
 
-        <div class="sec">What we'll walk through</div>
-        <div class="item"><span class="chk">&#10003;</span><div class="itc"><b>What actually changed this half</b><span>GST e-invoices, the false-certificate cutover, and the new collection, storage and transport rules.</span></div></div>
-        <div class="item"><span class="chk">&#10003;</span><div class="itc"><b>Building a clean evidence chain</b><span>From battery classification to certificate, the records that survive an audit.</span></div></div>
-        <div class="item"><span class="chk">&#10003;</span><div class="itc"><b>Live Q&amp;A</b><span>Bring your own compliance questions, we will answer them on the call.</span></div></div>
+        <div class="sec">The session will cover</div>
+        <div class="item"><span class="chk">&#10003;</span><div class="itc"><b>The H1 FY 2026-27 developments</b><span>GST e-invoicing, certificate validity, and the new collection, storage and transport guidelines.</span></div></div>
+        <div class="item"><span class="chk">&#10003;</span><div class="itc"><b>Building a defensible evidence chain</b><span>From battery classification to certificate.</span></div></div>
+        <div class="item"><span class="chk">&#10003;</span><div class="itc"><b>A live question-and-answer segment</b><span>Bring the questions specific to your operations.</span></div></div>
 
         <div class="ctas">
-          <a class="btn" href="https://recykaltimes.com/article/battery-scrap-epr-regulatory-updates-for-h1-fy-2026-27?utm_source=webinar-thankyou&utm_medium=page&utm_campaign=epr-webinar" target="_blank" rel="noopener">Read the compliance guide &rarr;</a>
+          <a class="btn" href="https://recykaltimes.com/article/battery-scrap-epr-regulatory-updates-for-h1-fy-2026-27?utm_source=webinar-thankyou&utm_medium=page&utm_campaign=epr-webinar" target="_blank" rel="noopener">Read the full briefing &rarr;</a>
           <a class="btn2" href="https://chat.whatsapp.com/BsPcP2Z3c4P5HdADsYirI6" target="_blank" rel="noopener">Join the community</a>
         </div>
       </div>
@@ -61,8 +61,8 @@
       var d=p.get('d');
       if(d){
         d=decodeURIComponent(d).replace(/\+/g,' ').trim();
-        document.getElementById('dateChip').textContent='You picked '+d;
-        document.title='Registered for '+d+' · Recykal Times';
+        document.getElementById('dateChip').textContent='Preferred date: '+d;
+        document.title='Interest registered · Recykal Times';
       }
     }catch(e){}
   })();
