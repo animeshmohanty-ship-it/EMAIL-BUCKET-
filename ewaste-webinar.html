@@ -4,6 +4,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Interest registered · Recykal Times</title>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RQSF35TXPY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RQSF35TXPY');
+</script>
 <style>
   :root{--red:#D5352F;--ink:#141414;--muted:#55554f;--line:#ececec;--bg:#eceae4;}
   *{box-sizing:border-box;}
@@ -63,6 +71,9 @@
         d=decodeURIComponent(d).replace(/\+/g,' ').trim();
         document.getElementById('dateChip').textContent='Preferred date: '+d;
         document.title='Interest registered · Recykal Times';
+      }
+      if(typeof gtag==='function'){
+        gtag('event','webinar_interest',{topic:'ewaste-epr',preferred_date:(d||'not specified')});
       }
     }catch(e){}
   })();
